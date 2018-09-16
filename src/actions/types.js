@@ -1,0 +1,1 @@
+export const GET_GEO_COORDS = 'GET_GEO_COORDS';
