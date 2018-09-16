@@ -31,9 +31,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>
-            Your location: { this.state.geo.latitude }, { this.state.geo.longitude }
-        </p>
+        { window.cordova ? (
+            <p>
+                Your location: { this.state.geo.latitude }, { this.state.geo.longitude }
+            </p>
+        ) : null }
       </div>
     );
   }
